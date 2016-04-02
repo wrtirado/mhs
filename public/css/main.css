@@ -1,0 +1,40 @@
+body {
+  font-family: "Baskerville";
+}
+
+.emptyBox {
+  height: 200px;
+}
+
+.homePageParallax {
+  display: block;
+}
+
+p {
+  font-size: 1.3em;
+}
+
+.imgTxt {
+  margin-left: 70px;
+  font-size: 1.5em;
+}
+
+.phoneNumber {
+  margin-left: 70px;
+  font-size: 1.5em;
+}
+
+.bottomBreak{
+  border-bottom: 4px solid rgb(17, 94, 30);
+}
+/*.infoText {
+  background-color: rgba(131, 183, 255, 0.3);
+  padding: 7px;
+  border-radius: 2px;
+}*/
+
+/*.infoDisplay {
+  background-color: rgba(0, 195, 0, 0.8);
+  padding: 7px;
+  border-radius: 2px;
+}*/

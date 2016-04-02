@@ -1,0 +1,23 @@
+{
+  "name": "mile-hi-skydiving",
+  "description": "Bower.json for Mile Hi Skydiving",
+  "main": "server.js",
+  "authors": [
+    "wrtirado <wrtirado@gmail.com>"
+  ],
+  "license": "MIT",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.2",
+    "Materialize": "materialize#^0.97.6",
+    "angular": "^1.5.3"
+  }
+}
