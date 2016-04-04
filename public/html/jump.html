@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mile-Hi Skydiving</title>
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/angular/angular.min.js"></script>
+  <script src="bower_components/Materialize/dist/js/materialize.min.js"></script>
+  <link rel="stylesheet" href="bower_components/Materialize/dist/css/materialize.min.css">
+  <!-- <link rel="stylesheet" href="bower_components/Materialize/dist/font/material-design-icons"> -->
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="blue lighten-5">
+  <!--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+-=-=-= Header Containing Nav Bar =-=-=-
+-=-=-= And drop-down menu =-=-=-=-=-=-=
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
+  <header>
+    <nav id='top'>
+      <div class="nav-wrapper deep-purple lighten-2">
+        <div>
+          <!-- large screen navbar -->
+          <a href="home" class="brand-logo">|      Mile-Hi Skydiving      |</a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="home">Home</a></li>
+            <li><a class="dropdown-button" data-hover="true" data-activates="infoDropdown">Information<i class="material-icons right">arrow_drop_down</i></a></li>
+            <!-- Set up for Drop-down menu -->
+            <ul id="infoDropdown" class="dropdown-content">
+              <li><a href="information">Information</a></li>
+              <li><a href="information#first-time-jumpers">First Time</a></li>
+              <li><a href="information#experienced-jumpers">Experienced</a></li>
+              <li><a href="information#equipment">Equipment</a></li>
+            </ul>
+            <li><a class="dropdown-button" data-hover="true" data-activates="jumpDropdown">Jump!<i class="material-icons right">arrow_drop_down</i></a></li>
+            <ul id="jumpDropdown" class="dropdown-content">
+              <li><a href="#!">Pricing</a></li>
+              <li><a href="#!">Pay</a></li>
+              <li><a href="#!">Certificates</a></li>
+            </ul>
+          </ul>
+          <!-- small screen slide-out navbar -->
+          <ul id="slide-out" class="side-nav">
+            <li><a href="home">Home</a></li>
+            <li><a class="dropdown-button" data-activates="infoDropdown1">Information<i class="material-icons right">arrow_drop_down</i></a></li>
+            <ul id="infoDropdown1" class="dropdown-content">
+              <li><a href="information">Information</a></li>
+              <li><a href="information#first-time-jumpers">First Time</a></li>
+              <li><a href="information#experinced-jumpers">Experienced</a></li>
+              <li><a href="information#equipment">Equipment</a></li>
+            </ul>
+            <li><a class="dropdown-button" data-activates="jumpDropdown1">Jump!<i class="material-icons right">arrow_drop_down</i></a></li>
+            <ul id="jumpDropdown1" class="dropdown-content">
+              <li><a href="#!">Pricing</a></li>
+              <li><a href="#!">Pay</a></li>
+              <li><a href="#!">Certificates</a></li>
+            </ul>
+          </ul>
+          <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+  <main>
+
+  </main>
+
+
+  <footer class="page-footer deep-purple lighten-1">
+    <div class="container">
+      <div class="row">
+        <div class="col l5 s6">
+          <h5 class="white-text">Mile-Hi Skydiving</h5>
+          <p class="grey-text text-lighten-4">Colorado's #1 Skydiving Facility!</p>
+        </div>
+
+        <div class="col l3 s6 left-align">
+          <h5 class="white-text">Address</h5>
+          <p class="grey-text text-lighten-4">229 Airport Rd. Hangar 34G <br> Longmont CO, 80503</p>
+
+          <h5 class="white-text">Contact Info</h5>
+          <p class="grey-text text-lighten-4">1.303.759.3483</p>
+        </div>
+
+
+        <div class="col l4  s12 right-align">
+          <h5 class="white-text">Navigation</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="home">Home</a></li>
+            <li><a class="grey-text text-lighten-3" href="information">Information</a></li>
+            <li><a class="grey-text text-lighten-3" href="jump">Jump!</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        © 2016 Copyright Text
+        <a class="grey-text text-lighten-4 right" href="#">Back to Top</a>
+      </div>
+    </div>
+  </footer>
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

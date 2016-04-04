@@ -3,7 +3,7 @@ body {
 }
 
 .emptyBox {
-  height: 200px;
+  height: 50px;
 }
 
 .homePageParallax {
@@ -27,14 +27,3 @@ p {
 .bottomBreak{
   border-bottom: 4px solid rgb(17, 94, 30);
 }
-/*.infoText {
-  background-color: rgba(131, 183, 255, 0.3);
-  padding: 7px;
-  border-radius: 2px;
-}*/
-
-/*.infoDisplay {
-  background-color: rgba(0, 195, 0, 0.8);
-  padding: 7px;
-  border-radius: 2px;
-}*/

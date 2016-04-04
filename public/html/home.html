@@ -3,13 +3,14 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Mile-Hi Skydiving</title>
   <script src="bower_components/jquery/dist/jquery.min.js"></script>
   <script src="bower_components/angular/angular.min.js"></script>
   <script src="bower_components/Materialize/dist/js/materialize.min.js"></script>
   <link rel="stylesheet" href="bower_components/Materialize/dist/css/materialize.min.css">
   <!-- <link rel="stylesheet" href="bower_components/Materialize/dist/font/material-design-icons"> -->
-   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -19,29 +20,50 @@
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
   <header>
 
-    <!-- Set up for Drop-down menu -->
-    <ul id="infoDropdown" class="dropdown-content">
-      <li><a href="#!">First Time</a></li>
-      <li><a href="#!">Experienced</a></li>
-      <li><a href="#!">Equipment</a></li>
-      <li><a href="#!">Partners</a></li>
-    </ul>
-    <ul id="jumpDropdown" class="dropdown-content">
-      <li><a href="#!">Pricing</a></li>
-      <li><a href="#!">Pay</a></li>
-      <li><a href="#!">Certificates</a></li>
-    </ul>
-
 
     <nav id='top'>
       <div class="nav-wrapper deep-purple lighten-2">
         <div>
-          <a href="#" class="brand-logo">|      Mile-Hi Skydiving      |</a>
+            <!-- large screen navbar -->
+          <a href="home" class="brand-logo">|      Mile-Hi Skydiving      |</a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><a href="sass.html">Home</a></li>
-            <li><a class="dropdown-button" href="#!" data-activates="infoDropdown">Information<i class="material-icons right">arrow_drop_down</i></a></li>
-            <li><a class="dropdown-button" href="#!" data-activates="jumpDropdown">Jump!<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a href="home">Home</a></li>
+            <li><a class="dropdown-button" data-hover="true" data-activates="infoDropdown">Information<i class="material-icons right">arrow_drop_down</i></a></li>
+            <!-- Set up for Drop-down menu -->
+            <ul id="infoDropdown" class="dropdown-content">
+              <li><a href="information">Information</a></li>
+              <li><a href="information#first-time-jumpers">First Time</a></li>
+              <li><a href="information#experienced-jumpers">Experienced</a></li>
+              <li><a href="information#equipment">Equipment</a></li>
+            </ul>
+            <li><a class="dropdown-button" data-hover="true" data-activates="jumpDropdown">Jump!<i class="material-icons right">arrow_drop_down</i></a></li>
+            <ul id="jumpDropdown" class="dropdown-content">
+              <li><a href="/jump">Jump!</a></li>
+              <li><a href="#!">Pricing</a></li>
+              <li><a href="#!">Pay</a></li>
+              <li><a href="#!">Certificates</a></li>
+            </ul>
           </ul>
+
+          <!-- small screen slide-out navbar -->
+          <ul id="slide-out" class="side-nav">
+            <li><a href="home">Home</a></li>
+            <li><a class="dropdown-button" data-activates="infoDropdown1">Information<i class="material-icons right">arrow_drop_down</i></a></li>
+            <ul id="infoDropdown1" class="dropdown-content">
+              <li><a href="information">Information</a></li>
+              <li><a href="information#first-time-jumpers">First Time</a></li>
+              <li><a href="information#experienced-jumpers">Experienced</a></li>
+              <li><a href="information#equipment">Equipment</a></li>
+            </ul>
+            <li><a class="dropdown-button" data-activates="jumpDropdown1">Jump!<i class="material-icons right">arrow_drop_down</i></a></li>
+            <ul id="jumpDropdown1" class="dropdown-content">
+              <li><a href="/jump">Jump!</a></li>
+              <li><a href="#!">Pricing</a></li>
+              <li><a href="#!">Pay</a></li>
+              <li><a href="#!">Certificates</a></li>
+            </ul>
+          </ul>
+          <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
         </div>
       </div>
     </nav>
@@ -49,6 +71,7 @@
 
 
   <main>
+    <h1 class="center-align bottomBreak"><strong>The Adventure of a Lifetime</strong></h1>
 
     <!--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
   -=-=-=     Parallax Photo       =-=-=-
@@ -67,6 +90,9 @@
 
         <div class="col l8 s12">
           <h1 class="center-align"><strong>Mile-Hi Skydiving</strong></h1>
+
+          <h4 class="bottomBreak">Colorado's #1 Skydiving Facility!</h4>
+          <p class="infoText">The Best View, Best equipment, Best Aircraft, Best Location</p>
           <p class="infoText">
             Mile Hi Skydiving Center is Colorado's TOP RANKED and largest skydiving facility with more than 35,000 jumps made annually! Mile Hi Skydiving is the only full-time skydiving operation within 100 miles of the Denver-Boulder area (12 miles from Boulder
             and 35 from Denver) We also have the largest fleet of full time twin engine jet-prop aircraft within several states capable of producing hundreds of jumps per day! We are the ONLY skydiving facilty in the state of Colorado that has been in
@@ -102,13 +128,13 @@
 
       <div class="row">
 
-        <p class="bottomBreak">The perfect place for first time skydivers</p>
+        <h4 class="bottomBreak">The perfect place for first time skydivers</h4>
 
 
         <p>We are Colorado's training specialists training more than 4 times the amount of students than any other skydiving center in the mountain region! First time skydivers are invited to go along for a Tandem Fun Jump which is the fastest and easiest
           way to experience body flight or for those who want to learn to jump on their own, Mile Hi Skydiving also offers Colorado's most advanced Accelerated Free Fall (AFF) program to help you become a solo skydiver! </p>
 
-        <p class="bottomBreak">Or experienced Pros:</p>
+        <h4 class="bottomBreak">Or experienced Pros:</h4>
 
         <p>For experienced jumpers, the environment is friendly, with a positive vibe no matter if you want to freefly, turn some points with your friends, participate in CReW, freestyle, or fly the Mile Hi Swoop Park, one of the largest and definitely the
           fastest swoop pond in America. Mile Hi continually improves its facilities every year and adds to the skydiving environment. Location and hours of operation Mile-Hi Skydiving Center is located at Hangar 34G at the Longmont airport approximately
@@ -118,14 +144,14 @@
             <br> (303)702-9911</blockquote>
         </p>
 
-        <p class="bottomBreak">Winter Hours</p>
+        <h4 class="bottomBreak">Winter Hours</h4>
         <p>Friday-Sunday 9:00am- Sunset Spring and Summer Hours Thursday-Friday 9:00am- Sunset Saturday-Sunday 8:00am- Sunset</p>
 
-        <p class="bottomBreak">Member USPA</p>
+        <h4 class="bottomBreak">Member USPA</h4>
         <p>We are proud to be a United States Parachute Association (USPA) enhanced group member and have highly qualified, nationally licensed instructors. Also we are the only school in Colorado to use the most sophisticated safety equipment available
           on ALL of our parachute equipment!</p>
 
-        <p class="bottomBreak">Amenities we offer</p>
+        <h4 class="bottomBreak">Amenities we offer</h4>
         <p>Mile Hi Skydiving has Colorado's largest skydiving facility offering indoor packing, indoor training area, indoor bathroom and shower facilities, full time gear store, full time rigging loft, many video debrief areas, and a friendly welcoming
           atmosphere. We also have 100 acres of smooth grass landing area with no obstacles!
         </p>
@@ -140,26 +166,27 @@
   <footer class="page-footer deep-purple lighten-1">
     <div class="container">
       <div class="row">
-        <div class="col l5 s6">
+        <div class="col l5 hide-on-small-only">
           <h5 class="white-text">Mile-Hi Skydiving</h5>
           <p class="grey-text text-lighten-4">Colorado's #1 Skydiving Facility!</p>
         </div>
 
-        <div class="col l3 s6 left-align">
+        <div class="col l3 s8 left-align">
           <h5 class="white-text">Address</h5>
-          <p class="grey-text text-lighten-4">229 Airport Rd. Hangar 34G <br> Longmont CO, 80503</p>
+          <p class="grey-text text-lighten-4">229 Airport Rd. Hangar 34G
+            <br> Longmont CO, 80503</p>
 
           <h5 class="white-text">Contact Info</h5>
           <p class="grey-text text-lighten-4">1.303.759.3483</p>
         </div>
 
 
-        <div class="col l4  s12 right-align">
+        <div class="col l4  s4 right-align">
           <h5 class="white-text">Navigation</h5>
           <ul>
-            <li><a class="grey-text text-lighten-3" href="#!">Home</a></li>
-            <li><a class="grey-text text-lighten-3" href="#!">Information</a></li>
-            <li><a class="grey-text text-lighten-3" href="#!">Jump!</a></li>
+            <li><a class="grey-text text-lighten-3" href="home">Home</a></li>
+            <li><a class="grey-text text-lighten-3" href="information">Information</a></li>
+            <li><a class="grey-text text-lighten-3" href="jump">Jump!</a></li>
           </ul>
         </div>
       </div>
