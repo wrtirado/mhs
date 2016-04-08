@@ -27,3 +27,12 @@ p {
 .bottomBreak{
   border-bottom: 4px solid rgb(17, 94, 30);
 }
+
+.back-to-top {
+	display: none;
+	text-indent: -9999px;
+	position: fixed;
+	z-index: 999;
+	right: 80px;
+	bottom: 80px;
+}
