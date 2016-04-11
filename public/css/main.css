@@ -30,11 +30,14 @@ p {
 
 .back-to-top {
 	display: none;
-	text-indent: -9999px;
 	position: fixed;
 	z-index: 999;
-	right: 80px;
-	bottom: 80px;
+	right: 20px;
+	bottom: 20px;
+}
+
+.mediaScroll {
+  overflow: scroll;
 }
 
 .buttonMove {
