@@ -1,5 +1,5 @@
 body {
-  font-family: "Baskerville";
+  font-family: "Antic Slab", serif;
 }
 
 .emptyBox {
@@ -35,4 +35,8 @@ p {
 	z-index: 999;
 	right: 80px;
 	bottom: 80px;
+}
+
+.buttonMove {
+  transform: translateY(53%);
 }
